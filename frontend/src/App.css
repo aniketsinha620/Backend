@@ -1,0 +1,157 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(33, 154, 204, 0.8297443977591037) 46%, rgba(0, 212, 255, 1) 100%);
+}
+
+.todoContainer {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.todo {
+  display: flex;
+  width: 80%;
+  /* height: 80vh; */
+  margin-top: 80px;
+
+  justify-content: space-between;
+}
+
+.task-enter {
+  display: flex;
+  flex: 0.2;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  height: 450px;
+  /* justify-content: space-evenly; */
+}
+
+.task-enter input {
+  width: 350px;
+  height: 50px;
+  border-radius: 9px;
+  margin-bottom: 20px;
+  font-size: 25px;
+
+}
+
+.task-enter input::placeholder,.task-enter textarea::placeholder {
+  padding: 20px;
+  
+}
+
+.task-enter textarea {
+  width: 350px;
+  border-radius: 9px;
+  font-size: 25px;
+
+  margin-bottom: 20px;
+
+  /* height:40px; */
+}
+
+.save {
+  width: 350px;
+  height: 40px;
+  border-radius: 9px;
+  background-color: green;
+  border: none;
+  color: white;
+  font-size: 25px;
+}
+
+.display {
+  flex: 0.7;
+  /* background-color: blue; */
+}
+
+.heading {
+  padding: 15px;
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  font-size: 25px;
+  color: white;
+  border-bottom: 2px solid grey;
+}
+
+li {
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: aliceblue;
+  font-size: 25px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  font-size: 20px;
+  text-align: center;
+  width: 800px;
+}
+
+.delete {
+  width: 50px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  align-items: center;
+  background-color: red;
+  border: none;
+}
